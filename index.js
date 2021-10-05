@@ -19,6 +19,13 @@ Do the following:
 
    HINT: no function required
 */
+const votingAge = 18
+
+if(votingAge >= 18){
+  console.log(true);
+} else {
+  console.log(false);
+}
 
 
 
@@ -32,9 +39,15 @@ Do the following:
 
    HINT: no function required
 */
+let dog = 'Cubbie';
+let behaviour = 'bad';
+if (behaviour === 'bad'){
+  dog = 'Rickie'
+} else {
+  dog = 'Cubbie';
+}
 
-
-
+console.log('task 1 b:', dog);
 
 
 /*
@@ -47,7 +60,7 @@ Do the following:
 
    HINT: look up the Number method
 */
-
+console.log('task 1 c:', Number('1999'));
 
 
 
@@ -60,11 +73,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(a, b){
+  return a * b;
 }
 
-
+console.log('task 1 d:', multiply(9,9));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -77,9 +90,10 @@ Do the following:
 */
 
 function dogYears(age){
-  return age *7;
+  return age * 7;
 }
 
+console.log('task 2:', dogYears(29));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -127,6 +141,7 @@ function hungryDog(weight, age){
   }
 }
 
+console.log('task 3', hungryDog(15, 1));
 
 
 
@@ -200,8 +215,10 @@ Using the annoyingSong function below do the following:
     "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(number){
+      for(let i=number; i<0; i--){
+        return `${number} bottles of soda on the WebGLSampler, ${number}} bottles of soda, take one down pass it around ${number-1} bottles of soda on the wall`
+      }
 }
 
 
